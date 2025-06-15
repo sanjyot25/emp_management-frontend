@@ -57,7 +57,7 @@ interface Assignment {
 
 export default function ManagerDashboard() {
   const navigate = useNavigate();
-  const { user, isAuthenticated, isLoading } = useAuthStore();
+  const { isAuthenticated, isLoading } = useAuthStore();
   const [projectStats, setProjectStats] = useState<ProjectStats>({
     total: 0,
     active: 0,

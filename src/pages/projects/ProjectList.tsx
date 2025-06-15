@@ -8,14 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Plus } from 'lucide-react';
 import type { Project } from '@/lib/projects';
 
-interface ProjectListProps {
-  _id: string;
-  name: string;
-  description: string;
-  startDate: string;
-  endDate: string;
-  status: 'active' | 'completed' | 'on-hold';
-}
+
 
 const ProjectList: React.FC = () => {
   const { isAuthenticated, isLoading: isAuthLoading } = useAuthStore();
